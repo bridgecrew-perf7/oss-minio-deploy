@@ -435,7 +435,7 @@ service:
 ingress:
   ## @param ingress.enabled Enable ingress controller resource
   ##
-  enabled: false
+  enabled: true
   ## @param ingress.certManager Set this to true in order to add the corresponding annotations for cert-manager
   ##
   certManager: false
