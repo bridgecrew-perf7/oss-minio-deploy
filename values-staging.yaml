@@ -400,7 +400,7 @@ sidecars: {}
 service:
   ## @param service.type MinIO&reg; service type
   ##
-  type: NodePort
+  type: ClusterIP
   ## @param service.port MinIO&reg; service port
   ##
   port: 9000
@@ -428,6 +428,7 @@ service:
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#internal-load-balancer
   ##
   annotations: {}
+  # kubernetes.io/ingress.class: traefik
 ## Configure the ingress resource that allows you to access the
 ## MinIO(R) installation. Set up the URL
 ## ref: http://kubernetes.io/docs/user-guide/ingress/
