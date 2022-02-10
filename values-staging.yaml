@@ -400,7 +400,7 @@ sidecars: {}
 service:
   ## @param service.type MinIO&reg; service type
   ##
-  type: ClusterIP
+  type: NodePort
   ## @param service.port MinIO&reg; service port
   ##
   port: 9000
